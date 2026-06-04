@@ -1,0 +1,4 @@
+display_name: Visio Automation
+short_description: Generate and edit Microsoft Visio diagrams with COM automation.
+default_prompt: Create a Visio diagram from my description, save a .vsdx file, and export a preview if possible.
+

@@ -1,0 +1,64 @@
+{
+  "title": "AI Visio Automation Demo",
+  "page": {
+    "width": 11,
+    "height": 8.5
+  },
+  "nodes": [
+    {
+      "id": "start",
+      "type": "terminator",
+      "text": "User request",
+      "fill": "#DDEBFF"
+    },
+    {
+      "id": "plan",
+      "type": "process",
+      "text": "AI creates diagram spec",
+      "fill": "#E7F6E7"
+    },
+    {
+      "id": "draw",
+      "type": "process",
+      "text": "Visio COM draws shapes",
+      "fill": "#FFF2CC"
+    },
+    {
+      "id": "check",
+      "type": "decision",
+      "text": "Looks correct?",
+      "fill": "#FCE4D6"
+    },
+    {
+      "id": "save",
+      "type": "terminator",
+      "text": "Save .vsdx",
+      "fill": "#EADCF8"
+    }
+  ],
+  "edges": [
+    {
+      "from": "start",
+      "to": "plan"
+    },
+    {
+      "from": "plan",
+      "to": "draw"
+    },
+    {
+      "from": "draw",
+      "to": "check"
+    },
+    {
+      "from": "check",
+      "to": "save",
+      "label": "yes"
+    },
+    {
+      "from": "check",
+      "to": "plan",
+      "label": "revise"
+    }
+  ]
+}
+
