@@ -1,0 +1,17 @@
+# Visio temporary lock files
+~$$*.vsdx
+~$*.vsdx
+*.~vsdx
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+
+# Local Codex scratch output
+.codex/visio/
