@@ -1,0 +1,527 @@
+﻿{
+    "title":  "研发测试横版泳道流程图",
+    "page":  {
+                 "width":  27,
+                 "height":  16,
+                 "baseWidth":  27,
+                 "baseHeight":  16
+             },
+    "layout":  {
+                   "referenceStyle":  true,
+                   "autoAvoidOverlap":  false,
+                   "shapePadding":  0.16,
+                   "minFontSize":  8,
+                   "maxFontSize":  12,
+                   "clearPageOnFullRedraw":  true
+               },
+    "note":  "绿色框内为交付文档",
+    "lanes":  [
+                  {
+                      "id":  "product",
+                      "title":  "产品需求阶段",
+                      "x1":  0.4,
+                      "x2":  4.9,
+                      "fill":  "#FFF9C4",
+                      "fontSize":  10.8
+                  },
+                  {
+                      "id":  "ui",
+                      "title":  "UI设计阶段",
+                      "x1":  4.9,
+                      "x2":  9.3,
+                      "fill":  "#C8F7C5",
+                      "fontSize":  10.8
+                  },
+                  {
+                      "id":  "dev",
+                      "title":  "技术开发阶段",
+                      "x1":  9.3,
+                      "x2":  13.7,
+                      "fill":  "#CFE2F3",
+                      "fontSize":  10.8
+                  },
+                  {
+                      "id":  "test",
+                      "title":  "测试验证阶段",
+                      "x1":  13.7,
+                      "x2":  18.1,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  10.8
+                  },
+                  {
+                      "id":  "release",
+                      "title":  "发布运营阶段",
+                      "x1":  18.1,
+                      "x2":  22.5,
+                      "fill":  "#00CC22",
+                      "fontSize":  10.8
+                  },
+                  {
+                      "id":  "rules",
+                      "title":  "规则说明",
+                      "x1":  22.5,
+                      "x2":  26.6,
+                      "fill":  "#F5F5F5",
+                      "fontSize":  10.8
+                  }
+              ],
+    "nodes":  [
+                  {
+                      "id":  "start",
+                      "type":  "terminator",
+                      "text":  "项目立项",
+                      "x":  2.25,
+                      "y":  13.5,
+                      "w":  1.75,
+                      "h":  0.62,
+                      "fontSize":  10.2
+                  },
+                  {
+                      "id":  "milestone_doc",
+                      "type":  "document",
+                      "text":  "《项目里程碑》",
+                      "x":  3.55,
+                      "y":  12.95,
+                      "w":  1.65,
+                      "h":  0.62,
+                      "fontSize":  9.6
+                  },
+                  {
+                      "id":  "research",
+                      "type":  "process",
+                      "text":  "需求调研",
+                      "x":  2.25,
+                      "y":  12.35,
+                      "w":  1.75,
+                      "h":  0.65,
+                      "fontSize":  10.2
+                  },
+                  {
+                      "id":  "analysis",
+                      "type":  "process",
+                      "text":  "需求分析",
+                      "x":  2.25,
+                      "y":  11.25,
+                      "w":  1.75,
+                      "h":  0.65,
+                      "fontSize":  10.2
+                  },
+                  {
+                      "id":  "prd_doc",
+                      "type":  "document",
+                      "text":  "《PRD文档》\n《需求原型稿》",
+                      "x":  3.65,
+                      "y":  10.7,
+                      "w":  1.95,
+                      "h":  0.74,
+                      "fontSize":  9.4
+                  },
+                  {
+                      "id":  "req_review",
+                      "type":  "decision",
+                      "text":  "需求评审",
+                      "x":  2.25,
+                      "y":  10.05,
+                      "w":  1.45,
+                      "h":  0.72,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "acceptance",
+                      "type":  "process",
+                      "text":  "需求验收",
+                      "x":  2.25,
+                      "y":  7.55,
+                      "w":  1.85,
+                      "h":  0.68,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "acceptance_review",
+                      "type":  "decision",
+                      "text":  "验收评审",
+                      "x":  2.25,
+                      "y":  6.25,
+                      "w":  1.45,
+                      "h":  0.72,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "replay",
+                      "type":  "process",
+                      "text":  "项目复盘",
+                      "x":  2.25,
+                      "y":  4.55,
+                      "w":  1.85,
+                      "h":  0.68,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "closing_doc",
+                      "type":  "document",
+                      "text":  "《项目验收清单》\n《项目复盘总结》",
+                      "x":  3.55,
+                      "y":  3.35,
+                      "w":  2.05,
+                      "h":  0.82,
+                      "fontSize":  9.2
+                  },
+                  {
+                      "id":  "ui_doc",
+                      "type":  "document",
+                      "text":  "《UI设计稿》",
+                      "x":  8.25,
+                      "y":  13.25,
+                      "w":  1.75,
+                      "h":  0.68,
+                      "fontSize":  9.6
+                  },
+                  {
+                      "id":  "ui_design",
+                      "type":  "process",
+                      "text":  "UI设计",
+                      "x":  6.55,
+                      "y":  12.15,
+                      "w":  1.85,
+                      "h":  0.66,
+                      "fontSize":  10.2
+                  },
+                  {
+                      "id":  "ui_review",
+                      "type":  "decision",
+                      "text":  "设计稿评审",
+                      "x":  6.55,
+                      "y":  10.7,
+                      "w":  1.55,
+                      "h":  0.76,
+                      "fontSize":  9.6
+                  },
+                  {
+                      "id":  "dev_doc",
+                      "type":  "document",
+                      "text":  "《项目开发计划》\n《项目概要设计》",
+                      "x":  12.65,
+                      "y":  13.38,
+                      "w":  1.95,
+                      "h":  0.85,
+                      "fontSize":  9
+                  },
+                  {
+                      "id":  "dev_plan",
+                      "type":  "process",
+                      "text":  "开发计划排期\n风险评估",
+                      "x":  11.25,
+                      "y":  12.35,
+                      "w":  2.1,
+                      "h":  0.8,
+                      "fontSize":  9.5
+                  },
+                  {
+                      "id":  "tech_design",
+                      "type":  "process",
+                      "text":  "技术方案设计",
+                      "x":  11.25,
+                      "y":  11.15,
+                      "w":  1.95,
+                      "h":  0.66,
+                      "fontSize":  9.8
+                  },
+                  {
+                      "id":  "design_doc",
+                      "type":  "document",
+                      "text":  "《详细设计文档》\n《接口文档》\n《数据字典》",
+                      "x":  12.65,
+                      "y":  10.28,
+                      "w":  1.95,
+                      "h":  1.05,
+                      "fontSize":  8.6
+                  },
+                  {
+                      "id":  "tech_review",
+                      "type":  "decision",
+                      "text":  "技术评审",
+                      "x":  11.25,
+                      "y":  9.72,
+                      "w":  1.45,
+                      "h":  0.72,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "coding",
+                      "type":  "process",
+                      "text":  "开发编码",
+                      "x":  11.25,
+                      "y":  8.35,
+                      "w":  1.75,
+                      "h":  0.62,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "self_test",
+                      "type":  "process",
+                      "text":  "开发自测\n多端联调",
+                      "x":  11.25,
+                      "y":  7.12,
+                      "w":  2,
+                      "h":  0.78,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  9.4
+                  },
+                  {
+                      "id":  "code_review",
+                      "type":  "decision",
+                      "text":  "代码合规评审",
+                      "x":  11.25,
+                      "y":  5.9,
+                      "w":  1.55,
+                      "h":  0.76,
+                      "fontSize":  9.2
+                  },
+                  {
+                      "id":  "test_request",
+                      "type":  "process",
+                      "text":  "提测申请\n可测版本",
+                      "x":  11.25,
+                      "y":  4.55,
+                      "w":  2.05,
+                      "h":  0.78,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  9.4
+                  },
+                  {
+                      "id":  "test_plan",
+                      "type":  "process",
+                      "text":  "测试计划排期\n风险评估",
+                      "x":  15.2,
+                      "y":  13.08,
+                      "w":  1.95,
+                      "h":  0.78,
+                      "fontSize":  9.2
+                  },
+                  {
+                      "id":  "test_doc",
+                      "type":  "document",
+                      "text":  "《测试计划》\n《测试用例》\n《测试报告》\n《验收计划》",
+                      "x":  16.9,
+                      "y":  12.35,
+                      "w":  1.85,
+                      "h":  1.05,
+                      "fontSize":  8.4
+                  },
+                  {
+                      "id":  "case_design",
+                      "type":  "process",
+                      "text":  "用例设计",
+                      "x":  15.2,
+                      "y":  11.55,
+                      "w":  1.65,
+                      "h":  0.6,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "case_review",
+                      "type":  "decision",
+                      "text":  "用例评审",
+                      "x":  15.2,
+                      "y":  10.38,
+                      "w":  1.45,
+                      "h":  0.72,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "smoke",
+                      "type":  "process",
+                      "text":  "冒烟测试",
+                      "x":  15.2,
+                      "y":  9.22,
+                      "w":  1.85,
+                      "h":  0.66,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "integration",
+                      "type":  "process",
+                      "text":  "集成测试",
+                      "x":  15.2,
+                      "y":  8.05,
+                      "w":  1.65,
+                      "h":  0.6,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "system",
+                      "type":  "process",
+                      "text":  "系统测试",
+                      "x":  15.2,
+                      "y":  6.9,
+                      "w":  1.65,
+                      "h":  0.6,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "security",
+                      "type":  "process",
+                      "text":  "安全测试",
+                      "x":  15.2,
+                      "y":  5.75,
+                      "w":  1.65,
+                      "h":  0.6,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "bug_verify",
+                      "type":  "process",
+                      "text":  "BUG验证",
+                      "x":  15.2,
+                      "y":  4.55,
+                      "w":  1.7,
+                      "h":  0.62,
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "bug_doc",
+                      "type":  "document",
+                      "text":  "《BUG记录统计》",
+                      "x":  16.85,
+                      "y":  4.3,
+                      "w":  1.7,
+                      "h":  0.62,
+                      "fontSize":  9.2
+                  },
+                  {
+                      "id":  "acceptance_test",
+                      "type":  "process",
+                      "text":  "验收测试",
+                      "x":  15.2,
+                      "y":  3.35,
+                      "w":  1.85,
+                      "h":  0.66,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  10
+                  },
+                  {
+                      "id":  "release_doc",
+                      "type":  "document",
+                      "text":  "《验收报告》\n《上线计划》\n《配置文档》",
+                      "x":  20.35,
+                      "y":  13.25,
+                      "w":  1.8,
+                      "h":  0.95,
+                      "fontSize":  8.8
+                  },
+                  {
+                      "id":  "env_deploy",
+                      "type":  "process",
+                      "text":  "测试环境部署",
+                      "x":  20.25,
+                      "y":  11.65,
+                      "w":  1.9,
+                      "h":  0.62,
+                      "fontSize":  9.6
+                  },
+                  {
+                      "id":  "pre_release",
+                      "type":  "process",
+                      "text":  "预上线部署",
+                      "x":  20.25,
+                      "y":  8.45,
+                      "w":  1.9,
+                      "h":  0.62,
+                      "fontSize":  9.8
+                  },
+                  {
+                      "id":  "prod_release",
+                      "type":  "process",
+                      "text":  "正式线部署",
+                      "x":  20.25,
+                      "y":  6.18,
+                      "w":  1.9,
+                      "h":  0.62,
+                      "fontSize":  9.8
+                  },
+                  {
+                      "id":  "online_regression",
+                      "type":  "process",
+                      "text":  "线上验收回归",
+                      "x":  20.25,
+                      "y":  4.45,
+                      "w":  2.05,
+                      "h":  0.7,
+                      "fill":  "#D9C2F0",
+                      "fontSize":  9.6
+                  },
+                  {
+                      "id":  "monitor",
+                      "type":  "process",
+                      "text":  "试运行监控",
+                      "x":  20.25,
+                      "y":  2.75,
+                      "w":  1.85,
+                      "h":  0.6,
+                      "fontSize":  9.8
+                  },
+                  {
+                      "id":  "close",
+                      "type":  "terminator",
+                      "text":  "项目结项",
+                      "x":  20.25,
+                      "y":  1.55,
+                      "w":  1.8,
+                      "h":  0.6,
+                      "fontSize":  10
+                  }
+              ],
+    "rules":  [
+                  {
+                      "title":  "（一）需求评审规范",
+                      "text":  "1 会议参与人员包括：产品、研发、测试、业务相关方。\n2 输出《需求规格说明书》《业务流程图》《UI设计稿》等产品文档。\n3 评审重点：范围、边界、业务规则、验收标准、异常场景。",
+                      "x":  24.55,
+                      "y":  12.4,
+                      "w":  3.75,
+                      "h":  2.35,
+                      "fontSize":  8.8
+                  },
+                  {
+                      "title":  "（二）技术评审规范",
+                      "text":  "1 输出《概要设计》《详细设计》《接口文档》《数据字典》。\n2 评审架构、接口、数据、性能容量、可测性和上线风险。\n3 评审结论必须形成整改清单。",
+                      "x":  24.55,
+                      "y":  9.65,
+                      "w":  3.75,
+                      "h":  2.25,
+                      "fontSize":  8.8
+                  },
+                  {
+                      "title":  "（三）测试准出标准",
+                      "text":  "1 用例执行通过率 \u003e= 99%，核心用例 100% 通过。\n2 P0/P1/P2 缺陷全部关闭，遗留问题有明确风险接受。\n3 兼容、性能、数据迁移和关键业务链路验证完成。",
+                      "x":  24.55,
+                      "y":  6.75,
+                      "w":  3.75,
+                      "h":  2.55,
+                      "fontSize":  8.6
+                  },
+                  {
+                      "title":  "（四）发布与结项标准",
+                      "text":  "1 发布前完成上线计划、回滚方案、配置文档和监控清单。\n2 上线后完成关键路径验证和生产问题跟踪。\n3 结项归档需求、设计、代码评审、测试报告、验收清单和复盘总结。",
+                      "x":  24.55,
+                      "y":  3.65,
+                      "w":  3.75,
+                      "h":  2.75,
+                      "fontSize":  8.6
+                  }
+              ],
+    "edges":  [
+                  {
+                      "from":  "start",
+                      "to":  "research",
+                      "fromPort":  "bottom",
+                      "toPort":  [
+                                     "top",
+                                     "E"
+                                 ],
+                      "waypoints":  "research"
+                  }
+              ]
+}

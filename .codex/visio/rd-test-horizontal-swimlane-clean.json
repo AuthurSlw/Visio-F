@@ -1,0 +1,687 @@
+﻿{
+    "title":  "研发测试横版泳道流程图",
+    "page":  {
+                 "width":  27,
+                 "height":  17.5,
+                 "baseWidth":  27,
+                 "baseHeight":  16
+             },
+    "layout":  {
+                   "shapePadding":  0.28,
+                   "autoAvoidOverlap":  false
+               },
+    "note":  "绿色框内为交付文档",
+    "lanes":  [
+                  {
+                      "id":  "product",
+                      "title":  "产品需求阶段",
+                      "x1":  0.4,
+                      "x2":  4.9,
+                      "fill":  "#FFF9C4"
+                  },
+                  {
+                      "id":  "ui",
+                      "title":  "UI设计阶段",
+                      "x1":  4.9,
+                      "x2":  9.3,
+                      "fill":  "#C8F7C5"
+                  },
+                  {
+                      "id":  "dev",
+                      "title":  "技术开发阶段",
+                      "x1":  9.3,
+                      "x2":  13.7,
+                      "fill":  "#CFE2F3"
+                  },
+                  {
+                      "id":  "test",
+                      "title":  "测试验证阶段",
+                      "x1":  13.7,
+                      "x2":  18.1,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "release",
+                      "title":  "发布运营阶段",
+                      "x1":  18.1,
+                      "x2":  22.5,
+                      "fill":  "#00CC22"
+                  },
+                  {
+                      "id":  "rules",
+                      "title":  "规则说明",
+                      "x1":  22.5,
+                      "x2":  26.6,
+                      "fill":  "#F5F5F5"
+                  }
+              ],
+    "nodes":  [
+                  {
+                      "id":  "start",
+                      "type":  "terminator",
+                      "text":  "项目立项",
+                      "x":  2.3,
+                      "y":  13.7,
+                      "w":  1.8,
+                      "h":  0.65,
+                      "fill":  "#FFFFFF"
+                  },
+                  {
+                      "id":  "milestone_doc",
+                      "type":  "document",
+                      "text":  "《项目里程碑》",
+                      "x":  3.6,
+                      "y":  12.95,
+                      "w":  1.55,
+                      "h":  0.55
+                  },
+                  {
+                      "id":  "research",
+                      "type":  "process",
+                      "text":  "需求调研",
+                      "x":  2.3,
+                      "y":  12.55,
+                      "w":  1.75,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "analysis",
+                      "type":  "process",
+                      "text":  "需求分析",
+                      "x":  2.3,
+                      "y":  11.35,
+                      "w":  1.75,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "prd_doc",
+                      "type":  "document",
+                      "text":  "《PRD文档》\n《需求原型稿》",
+                      "x":  3.75,
+                      "y":  10.65,
+                      "w":  1.95,
+                      "h":  0.75
+                  },
+                  {
+                      "id":  "req_review",
+                      "type":  "decision",
+                      "text":  "需求评审",
+                      "x":  2.3,
+                      "y":  10.15,
+                      "w":  1.75,
+                      "h":  0.75
+                  },
+                  {
+                      "id":  "ui_design",
+                      "type":  "process",
+                      "text":  "UI设计",
+                      "x":  7.1,
+                      "y":  12.25,
+                      "w":  1.9,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "ui_doc",
+                      "type":  "document",
+                      "text":  "《UI设计稿》",
+                      "x":  8.25,
+                      "y":  13.45,
+                      "w":  1.65,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "ui_review",
+                      "type":  "decision",
+                      "text":  "设计稿评审",
+                      "x":  7.1,
+                      "y":  10.9,
+                      "w":  1.75,
+                      "h":  0.75
+                  },
+                  {
+                      "id":  "dev_plan",
+                      "type":  "process",
+                      "text":  "开发计划排期\n风险评估",
+                      "x":  11.45,
+                      "y":  12.6,
+                      "w":  2.15,
+                      "h":  0.8
+                  },
+                  {
+                      "id":  "dev_plan_doc",
+                      "type":  "document",
+                      "text":  "《项目开发计划》\n《项目概要设计》",
+                      "x":  12.75,
+                      "y":  13.65,
+                      "w":  1.8,
+                      "h":  0.85
+                  },
+                  {
+                      "id":  "tech_design",
+                      "type":  "process",
+                      "text":  "技术方案设计",
+                      "x":  11.45,
+                      "y":  11.35,
+                      "w":  2.0,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "design_doc",
+                      "type":  "document",
+                      "text":  "《详细设计文档》\n《接口文档》\n《数据字典》",
+                      "x":  12.75,
+                      "y":  10.55,
+                      "w":  1.9,
+                      "h":  1.1
+                  },
+                  {
+                      "id":  "tech_review",
+                      "type":  "decision",
+                      "text":  "技术评审",
+                      "x":  11.45,
+                      "y":  10.1,
+                      "w":  1.75,
+                      "h":  0.75
+                  },
+                  {
+                      "id":  "coding",
+                      "type":  "process",
+                      "text":  "开发编码",
+                      "x":  11.45,
+                      "y":  8.8,
+                      "w":  1.8,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "self_test",
+                      "type":  "process",
+                      "text":  "开发自测\n多端联调",
+                      "x":  11.45,
+                      "y":  7.45,
+                      "w":  2.0,
+                      "h":  0.8,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "code_review",
+                      "type":  "decision",
+                      "text":  "代码合规评审",
+                      "x":  11.45,
+                      "y":  6.15,
+                      "w":  1.85,
+                      "h":  0.8
+                  },
+                  {
+                      "id":  "test_request",
+                      "type":  "process",
+                      "text":  "提测申请\n可测版本",
+                      "x":  11.45,
+                      "y":  4.8,
+                      "w":  2.0,
+                      "h":  0.8,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "test_plan",
+                      "type":  "process",
+                      "text":  "测试计划排期\n风险评估",
+                      "x":  15.9,
+                      "y":  13.0,
+                      "w":  2.05,
+                      "h":  0.75
+                  },
+                  {
+                      "id":  "case_design",
+                      "type":  "process",
+                      "text":  "用例设计",
+                      "x":  15.9,
+                      "y":  11.85,
+                      "w":  1.8,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "test_doc",
+                      "type":  "document",
+                      "text":  "《测试计划》\n《测试用例》\n《测试报告》\n《验收计划》",
+                      "x":  17.1,
+                      "y":  12.45,
+                      "w":  1.85,
+                      "h":  1.05
+                  },
+                  {
+                      "id":  "case_review",
+                      "type":  "decision",
+                      "text":  "用例评审",
+                      "x":  15.9,
+                      "y":  10.75,
+                      "w":  1.65,
+                      "h":  0.7
+                  },
+                  {
+                      "id":  "smoke",
+                      "type":  "process",
+                      "text":  "冒烟测试",
+                      "x":  15.9,
+                      "y":  9.4,
+                      "w":  1.9,
+                      "h":  0.65,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "integration",
+                      "type":  "process",
+                      "text":  "集成测试",
+                      "x":  15.9,
+                      "y":  8.25,
+                      "w":  1.8,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "system",
+                      "type":  "process",
+                      "text":  "系统测试",
+                      "x":  15.9,
+                      "y":  7.1,
+                      "w":  1.8,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "security",
+                      "type":  "process",
+                      "text":  "安全测试",
+                      "x":  15.9,
+                      "y":  5.95,
+                      "w":  1.8,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "bug_verify",
+                      "type":  "process",
+                      "text":  "BUG验证",
+                      "x":  15.9,
+                      "y":  4.75,
+                      "w":  1.8,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "bug_doc",
+                      "type":  "document",
+                      "text":  "《BUG记录统计》",
+                      "x":  17.05,
+                      "y":  4.4,
+                      "w":  1.7,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "acceptance_test",
+                      "type":  "process",
+                      "text":  "验收测试",
+                      "x":  15.9,
+                      "y":  3.55,
+                      "w":  1.9,
+                      "h":  0.65,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "env_deploy",
+                      "type":  "process",
+                      "text":  "测试环境部署",
+                      "x":  20.3,
+                      "y":  11.9,
+                      "w":  2.0,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "acceptance_doc",
+                      "type":  "document",
+                      "text":  "《验收报告》\n《上线计划》\n《配置文档》",
+                      "x":  20.35,
+                      "y":  13.3,
+                      "w":  1.85,
+                      "h":  1.0
+                  },
+                  {
+                      "id":  "pre_release",
+                      "type":  "process",
+                      "text":  "预上线部署",
+                      "x":  20.3,
+                      "y":  8.7,
+                      "w":  1.95,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "prod_release",
+                      "type":  "process",
+                      "text":  "正式线部署",
+                      "x":  20.3,
+                      "y":  6.0,
+                      "w":  1.95,
+                      "h":  0.65
+                  },
+                  {
+                      "id":  "online_regression",
+                      "type":  "process",
+                      "text":  "线上验收回归",
+                      "x":  20.3,
+                      "y":  4.45,
+                      "w":  2.05,
+                      "h":  0.7,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "acceptance",
+                      "type":  "process",
+                      "text":  "需求验收",
+                      "x":  2.3,
+                      "y":  7.7,
+                      "w":  1.85,
+                      "h":  0.65,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "acceptance_review",
+                      "type":  "decision",
+                      "text":  "验收评审",
+                      "x":  2.3,
+                      "y":  6.45,
+                      "w":  1.75,
+                      "h":  0.75
+                  },
+                  {
+                      "id":  "project_replay",
+                      "type":  "process",
+                      "text":  "项目复盘",
+                      "x":  2.3,
+                      "y":  4.7,
+                      "w":  1.85,
+                      "h":  0.65,
+                      "fill":  "#D9C2F0"
+                  },
+                  {
+                      "id":  "closing_doc",
+                      "type":  "document",
+                      "text":  "《项目验收清单》\n《项目复盘总结》",
+                      "x":  3.65,
+                      "y":  3.65,
+                      "w":  2.0,
+                      "h":  0.85
+                  },
+                  {
+                      "id":  "monitor",
+                      "type":  "process",
+                      "text":  "试运行监控",
+                      "x":  20.3,
+                      "y":  2.8,
+                      "w":  1.9,
+                      "h":  0.6
+                  },
+                  {
+                      "id":  "close",
+                      "type":  "terminator",
+                      "text":  "项目结项",
+                      "x":  20.3,
+                      "y":  1.6,
+                      "w":  1.8,
+                      "h":  0.6
+                  }
+              ],
+    "rules":  [
+                  {
+                      "title":  "（一）需求评审规范",
+                      "text":  "1 会议参与人员包括：产品、研发、测试、业务相关方。\n2 输出《需求规格说明书》《业务流程图》《UI设计稿》等产品文档。\n3 评审重点：范围、边界、业务规则、验收标准、异常场景。",
+                      "x":  24.55,
+                      "y":  12.45,
+                      "w":  3.65,
+                      "h":  2.35
+                  },
+                  {
+                      "title":  "（二）技术评审规范",
+                      "text":  "1 输出《概要设计》《详细设计》《接口文档》《数据字典》。\n2 评审架构、接口、数据、性能容量、可测性和上线风险。\n3 评审结论必须形成整改清单。",
+                      "x":  24.55,
+                      "y":  9.85,
+                      "w":  3.65,
+                      "h":  2.35
+                  },
+                  {
+                      "title":  "（三）测试准出标准",
+                      "text":  "1 用例执行通过率 \u003e= 99%，核心用例 100% 通过。\n2 P0/P1/P2 缺陷全部关闭，遗留问题有明确风险接受。\n3 兼容、性能、数据迁移和关键业务链路验证完成。",
+                      "x":  24.55,
+                      "y":  7.25,
+                      "w":  3.65,
+                      "h":  2.35
+                  },
+                  {
+                      "title":  "（四）发布与结项标准",
+                      "text":  "1 发布前完成上线计划、回滚方案、配置文档和监控清单。\n2 上线后完成关键路径验证和生产问题跟踪。\n3 结项归档需求、设计、代码评审、测试报告、验收清单和复盘总结。",
+                      "x":  24.55,
+                      "y":  4.4,
+                      "w":  3.65,
+                      "h":  2.75
+                  }
+              ],
+    "edges":  [
+                  {
+                      "to":  "research",
+                      "from":  "start"
+                  },
+                  {
+                      "to":  "analysis",
+                      "from":  "research"
+                  },
+                  {
+                      "to":  "req_review",
+                      "from":  "analysis"
+                  },
+                  {
+                      "label":  "通过",
+                      "from":  "req_review",
+                      "to":  "ui_design",
+                      "waypoints":  [
+                                        {
+                                            "y":  10.15,
+                                            "x":  4.45
+                                        },
+                                        {
+                                            "y":  12.25,
+                                            "x":  4.45
+                                        }
+                                    ]
+                  },
+                  {
+                      "to":  "ui_review",
+                      "from":  "ui_design"
+                  },
+                  {
+                      "label":  "通过",
+                      "from":  "ui_review",
+                      "to":  "dev_plan",
+                      "waypoints":  [
+                                        {
+                                            "y":  10.9,
+                                            "x":  9.05
+                                        },
+                                        {
+                                            "y":  12.6,
+                                            "x":  9.05
+                                        }
+                                    ]
+                  },
+                  {
+                      "to":  "tech_design",
+                      "from":  "dev_plan"
+                  },
+                  {
+                      "to":  "tech_review",
+                      "from":  "tech_design"
+                  },
+                  {
+                      "label":  "通过",
+                      "from":  "tech_review",
+                      "to":  "coding"
+                  },
+                  {
+                      "to":  "self_test",
+                      "from":  "coding"
+                  },
+                  {
+                      "to":  "code_review",
+                      "from":  "self_test"
+                  },
+                  {
+                      "label":  "通过",
+                      "from":  "code_review",
+                      "to":  "test_request"
+                  },
+                  {
+                      "to":  "case_design",
+                      "from":  "test_plan"
+                  },
+                  {
+                      "to":  "case_review",
+                      "from":  "case_design"
+                  },
+                  {
+                      "label":  "通过",
+                      "from":  "case_review",
+                      "to":  "smoke"
+                  },
+                  {
+                      "from":  "test_request",
+                      "to":  "smoke",
+                      "waypoints":  [
+                                        {
+                                            "y":  4.8,
+                                            "x":  13.25
+                                        },
+                                        {
+                                            "y":  9.4,
+                                            "x":  13.25
+                                        }
+                                    ]
+                  },
+                  {
+                      "from":  "env_deploy",
+                      "to":  "smoke",
+                      "waypoints":  [
+                                        {
+                                            "y":  11.9,
+                                            "x":  18
+                                        },
+                                        {
+                                            "y":  9.4,
+                                            "x":  18
+                                        }
+                                    ]
+                  },
+                  {
+                      "to":  "integration",
+                      "from":  "smoke"
+                  },
+                  {
+                      "to":  "system",
+                      "from":  "integration"
+                  },
+                  {
+                      "to":  "security",
+                      "from":  "system"
+                  },
+                  {
+                      "to":  "bug_verify",
+                      "from":  "security"
+                  },
+                  {
+                      "to":  "acceptance_test",
+                      "from":  "bug_verify"
+                  },
+                  {
+                      "from":  "acceptance_test",
+                      "to":  "acceptance",
+                      "waypoints":  [
+                                        {
+                                            "y":  3.55,
+                                            "x":  13
+                                        },
+                                        {
+                                            "y":  7.7,
+                                            "x":  13
+                                        },
+                                        {
+                                            "y":  7.7,
+                                            "x":  4.65
+                                        }
+                                    ]
+                  },
+                  {
+                      "to":  "acceptance_review",
+                      "from":  "acceptance"
+                  },
+                  {
+                      "label":  "通过",
+                      "from":  "acceptance_review",
+                      "to":  "pre_release",
+                      "waypoints":  [
+                                        {
+                                            "y":  6.45,
+                                            "x":  4.45
+                                        },
+                                        {
+                                            "y":  6.45,
+                                            "x":  18.45
+                                        },
+                                        {
+                                            "y":  8.7,
+                                            "x":  18.45
+                                        }
+                                    ]
+                  },
+                  {
+                      "to":  "prod_release",
+                      "from":  "pre_release"
+                  },
+                  {
+                      "to":  "online_regression",
+                      "from":  "prod_release"
+                  },
+                  {
+                      "label":  "完成",
+                      "from":  "online_regression",
+                      "to":  "project_replay",
+                      "waypoints":  [
+                                        {
+                                            "y":  4.45,
+                                            "x":  18.35
+                                        },
+                                        {
+                                            "y":  4.7,
+                                            "x":  18.35
+                                        },
+                                        {
+                                            "y":  4.7,
+                                            "x":  4.55
+                                        }
+                                    ]
+                  },
+                  {
+                      "from":  "project_replay",
+                      "to":  "monitor",
+                      "waypoints":  [
+                                        {
+                                            "y":  4.7,
+                                            "x":  4.55
+                                        },
+                                        {
+                                            "y":  4.7,
+                                            "x":  18.35
+                                        },
+                                        {
+                                            "y":  2.8,
+                                            "x":  18.35
+                                        }
+                                    ]
+                  },
+                  {
+                      "to":  "close",
+                      "from":  "monitor"
+                  }
+              ]
+}

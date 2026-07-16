@@ -6,6 +6,8 @@ param(
     [string]$OutputPath,
 
     [switch]$Visible,
+    [switch]$KeepOpen,
+    [int]$StepDelayMs = 0,
     [switch]$ExportPdf,
     [switch]$ExportPng
 )
@@ -139,7 +141,19 @@ function Add-Connector {
     Set-CellFormulaSafe -Shape $line -Cell "LineColor" -Formula (ConvertTo-RgbFormula -Color (Get-JsonValue -Object $Edge -Name "color") -Default "#404040")
     Set-CellFormulaSafe -Shape $line -Cell "LineWeight" -Formula "1 pt"
     Set-CellFormulaSafe -Shape $line -Cell "Char.Size" -Formula "8 pt"
+    try {
+        $line.SendToBack()
+    } catch {
+        # Connector z-order is cosmetic; keep generation going if this method is unavailable.
+    }
     return $line
+}
+
+function Wait-ForVisibleStep {
+    param([int]$Milliseconds)
+    if ($Milliseconds -gt 0) {
+        Start-Sleep -Milliseconds $Milliseconds
+    }
 }
 
 function Set-AutoLayout {
@@ -232,7 +246,7 @@ if (-not (Test-Path -LiteralPath $outDir)) {
     New-Item -ItemType Directory -Path $outDir -Force | Out-Null
 }
 
-$spec = Get-Content -LiteralPath $fullSpecPath -Raw | ConvertFrom-Json
+$spec = Get-Content -LiteralPath $fullSpecPath -Raw -Encoding UTF8 | ConvertFrom-Json
 $specNodes = Get-JsonValue -Object $spec -Name "nodes"
 if ($null -eq $specNodes -or @($specNodes).Count -eq 0) {
     throw "Spec must include at least one node."
@@ -270,6 +284,7 @@ try {
         }
         $shape = Add-NodeShape -Page $page -Node $node
         $shapeById[[string]$nodeId] = $shape
+        Wait-ForVisibleStep -Milliseconds $StepDelayMs
     }
 
     $specEdges = Get-JsonValue -Object $spec -Name "edges"
@@ -284,6 +299,7 @@ try {
                 throw "Edge references missing to node '$toId'."
             }
             [void](Add-Connector -Page $page -FromShape $shapeById[$fromId] -ToShape $shapeById[$toId] -Edge $edge)
+            Wait-ForVisibleStep -Milliseconds $StepDelayMs
         }
     }
 
@@ -301,10 +317,10 @@ try {
 
     Write-Output "Created $fullOutputPath"
 } finally {
-    if ($null -ne $doc) {
+    if ($null -ne $doc -and -not $KeepOpen) {
         try { $doc.Close() } catch {}
     }
-    if ($null -ne $visio -and -not $Visible) {
+    if ($null -ne $visio -and -not $Visible -and -not $KeepOpen) {
         try { $visio.Quit() } catch {}
     }
 }
